@@ -1,6 +1,6 @@
 <?php
 
-namespace Block\BlockCSRF;
+namespace Block;
 
 class BlockCSRF {
 
