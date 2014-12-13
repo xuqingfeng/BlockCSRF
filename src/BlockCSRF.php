@@ -33,14 +33,6 @@ class BlockCSRF {
 		return $_SESSION['csrfToken']['token'];
 	}
 
-	// public function enable(){
-
-	// 	$session = time();
-	// 	$_SESSION['csrfToken'] = time();
-	// 	self::$csrfToken = $_SESSION['csrfToken'];
-	// 	return session_id();
-	// }
-
 	public function check($token){
 
 		if(isset($_SESSION['csrfToken']['token'])){
