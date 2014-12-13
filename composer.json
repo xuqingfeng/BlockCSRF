@@ -1,0 +1,20 @@
+{
+    "name": "block/block-csrf",
+    "description": "[Block web site CSRF attack]",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "xuqingfeng",
+            "email": "js-xqf@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.29"
+    },
+    "autoload": {
+        "psr-4": {
+            "Block\\BlockCSRF\\" : "src/Block/"
+        }
+    }
+}

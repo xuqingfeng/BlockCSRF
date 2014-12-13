@@ -1,10 +1,14 @@
 <?php
+
 require_once 'BlockCSRF.php';
 
-use Block\CSRF\BlockCSRF;
+use Block\BlockCSRF;
 
 $blockCSRF = BlockCSRF::instance();
 $token = $blockCSRF->generate();
+
+// var_dump($csrfToken);
+
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +28,7 @@ $token = $blockCSRF->generate();
 		<label>Password:</label>
 		<input type="password" name="password" />
 		<br/>
-		<button type="submit">post</button>
+		<button type="submit">Login</button>
 	</form>
 </div>
 </body>
