@@ -1,6 +1,6 @@
 ##BlockCSRF
 
-*block web site from csrf attack*
+*protect web site from csrf attack*
 
 ###Install
 > via composer

@@ -1,6 +1,6 @@
 {
     "name": "block/block-csrf",
-    "description": "[Block web site CSRF attack]",
+    "description": "[Protect web site from CSRF attack]",
     "license": "GPLv3",
     "authors": [
         {
