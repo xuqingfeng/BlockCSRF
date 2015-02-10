@@ -34,7 +34,9 @@ $blockCSRF->check($token);
 
 ###Test
 
-
+```
+phpunit .
+```
 
 ###License
 

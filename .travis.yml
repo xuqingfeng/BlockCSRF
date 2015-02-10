@@ -8,5 +8,3 @@ php:
 branchs:
   only:
     - master
-
-script: phpunit -c phpunit.xml
