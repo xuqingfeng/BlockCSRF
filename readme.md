@@ -2,6 +2,8 @@
 
 *protect your web site from csrf attack*
 
+![travis](https://travis-ci.org/xuqingfeng/blockcsrf.svg?branch=master)
+
 ###Install
 > via composer
 
@@ -22,8 +24,8 @@ $blockCSRF = \Block\BlockCSRF::getInstance();
 // generate token
 $blockCSRF->generate();
 
-// check token
 /*
+ * check token
  * @return true OR false
  */
 $blockCSRF->check($token);
