@@ -14,7 +14,6 @@ class BlockCSRF {
 	private static $blockCSRF;
 	private static $expireTime;
 
-
 	private function __construct(){
 		// expire in 10 mins
 		self::$expireTime = 600;
