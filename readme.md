@@ -1,6 +1,6 @@
 ##BlockCSRF
 
-*protect web site from csrf attack*
+*protect your web site from csrf attack*
 
 ###Install
 > via composer
@@ -8,30 +8,31 @@
 ```
 {
 	"require": {
-		"block/block-csrf": "dev-master"
+		"block/block-csrf": "0.1.*"
 	}
 }
 ```
 
 ###How
 
-- create instance
+```php
+// create instance
+$blockCSRF = \Block\BlockCSRF::getInstance();
 
-$blockCSRF = Block\BlockCSRF::instance();
-
-- generate token
-
+// generate token
 $blockCSRF->generate();
 
-- check token
-
-//@return true OR false
-
+// check token
+/*
+ * @return true OR false
+ */
 $blockCSRF->check($token);
 
-###TODO
+```
 
-Test
+###Test
+
+
 
 ###License
 

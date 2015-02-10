@@ -1,6 +1,6 @@
 {
     "name": "block/block-csrf",
-    "description": "[Protect web site from CSRF attack]",
+    "description": "[Protect your web site from CSRF attack]",
     "license": "GPLv3",
     "authors": [
         {
@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.29"
+        "php": ">=5.3.3"
     },
     "autoload": {
         "psr-4": {

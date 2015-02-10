@@ -1,6 +1,13 @@
 <?php
-
+/**
+ * Author: xuqingfeng <js-xqf@hotmail.com>
+ * Date: 15/2/10
+ */
 namespace Block;
+
+if(!isset($_SESSION)){
+    session_start();
+}
 
 class BlockCSRF {
 
@@ -9,15 +16,12 @@ class BlockCSRF {
 
 
 	private function __construct(){
-		if(!isset($_SESSION)){
-			session_start();
-		}
 		// expire in 10 mins
 		self::$expireTime = 600;
 		date_default_timezone_set('Asia/Shanghai');
 	}
 
-	public static function instance(){
+	public static function getInstance(){
 
 		if(!isset(self::$blockCSRF)){
 			self::$blockCSRF = new BlockCSRF();
@@ -50,12 +54,10 @@ class BlockCSRF {
 		return false;
 	}
 
-	public function destory(){
+	public function destroy(){
 
 		$_SESSION['csrfToken'] = array();
 		unset($_SESSION['csrfToken']);
 	}
 
-
-	 
 }
