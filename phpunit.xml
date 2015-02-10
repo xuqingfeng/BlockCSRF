@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <phpunit verbose="true" colors="true">
     <testsuits>
-        <testsuit>
+        <testsuit name="BlockCSRFTest">
             <directory suffix="Test.php">tests</directory>
         </testsuit>
     </testsuits>

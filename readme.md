@@ -2,7 +2,7 @@
 
 *protect your web site from csrf attack*
 
-![travis](https://travis-ci.org/xuqingfeng/blockcsrf.svg?branch=master)
+![travis](https://travis-ci.org/xuqingfeng/BlockCSRF.svg)
 
 ###Install
 > via composer
