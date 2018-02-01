@@ -1,10 +1,10 @@
-##BlockCSRF
+## BlockCSRF
 
-*protect your web site from csrf attack*
+> protect your web site from csrf attack
 
 ![travis](https://travis-ci.org/xuqingfeng/BlockCSRF.svg)
 
-###Install
+### Install
 > via composer
 
 ```
@@ -15,7 +15,7 @@
 }
 ```
 
-###How
+### How
 
 ```php
 // create instance
@@ -32,13 +32,13 @@ $blockCSRF->check($token);
 
 ```
 
-###Test
+### Test
 
 ```
 phpunit .
 ```
 
-###License
+### License
 
-GPLv3
+MIT
 
